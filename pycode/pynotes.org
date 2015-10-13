@@ -9,4 +9,9 @@
   *We can turn iterable like list into iterator using iter function.*
   Dictionary are iterables. Iteration protocol converts dictionary iterable to
   an iterator which can give us the keys.
-
+* Containers
+  Technically, an object is a container when it can be asked whether it contains
+  a certain element. You can perform such membership tests on lists, sets, or
+  tuples alike: 
+* Iterables
+  
