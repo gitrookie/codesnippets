@@ -1,0 +1,12 @@
+* Iterator Protocol
+  This interface is most of what we call the iteration protocol in Python. Any
+  object with a __next__method to advance to next result, which raised
+  StopIteration at the end of the series of results is considered an iterator in
+  python. All iteration tools like for, list comprehensions, map  normally work
+  internally by calling __next__ method on each iteration and catching the
+  StopIteration exception to determine when to exit. For some object an
+  additional step to call *iter* is required.
+  *We can turn iterable like list into iterator using iter function.*
+  Dictionary are iterables. Iteration protocol converts dictionary iterable to
+  an iterator which can give us the keys.
+
