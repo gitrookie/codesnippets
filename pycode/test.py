@@ -1,3 +1,4 @@
+# Adding thousand separator in a number
 def f2(n):
     r = []
     for i, c in enumerate(reversed(str(n))):
@@ -7,3 +8,8 @@ def f2(n):
     return "".join(r)
 
 print(f2(1234567))
+
+# Using str's format method
+def f1(n):
+    return "{0:,}".format(n)
+    
