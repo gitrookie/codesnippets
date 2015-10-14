@@ -14,4 +14,3 @@
   a certain element. You can perform such membership tests on lists, sets, or
   tuples alike: 
 * Iterables
-  
