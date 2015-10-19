@@ -30,7 +30,14 @@ patt = re.compile(r"\b([a-z]+)\s+\1\b", re.IGNORECASE)
 match = patt.search("hey the the issue is serious")
 s = re.sub(patt, r"\1", "hey the The issue")
 
+# Good Example to Understand Lookahead Operators.
+thou = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1,", "123456789")
+# patt = re.compile("(\d)(?=(\d{3})+(?!\d))")
+# match = patt.search("12345678")
 
+patt = re.compile("(\d)(?=(\d{3})*(?!\d))", re.IGNORECASE)
+# patt = re.compile("(\d)(?=(\d{3})+)2", re.IGNORECASE)
+s = patt.search("1a")
 pos = re.compile("$", re.IGNORECASE)
 match = pos.search("hi")
 print(match)
