@@ -23,6 +23,12 @@ patt = re.compile("(?P<name>abcd)\s(?P=name)", re.IGNORECASE)
 match = patt.search("abcd abcde")
 
 
+# Good Example to Understand Lookahead Operators.
 thou = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1,", "123456789")
 # patt = re.compile("(\d)(?=(\d{3})+(?!\d))")
 # match = patt.search("12345678")
+
+patt = re.compile("(\d)(?=(\d{3})*(?!\d))", re.IGNORECASE)
+# patt = re.compile("(\d)(?=(\d{3})+)2", re.IGNORECASE)
+s = patt.search("1a")
+print(s)
