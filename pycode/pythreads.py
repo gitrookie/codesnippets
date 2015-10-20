@@ -1,12 +1,18 @@
 # Threads in Python
 
-import time
 import threading
 # In Python3 *thread* has been renamed to *_thread* which is used to implement
 # threading* module. Python3 applications should use thread module.
 # args is argument tuple for target invocation
 
+
+class MyThread(threading.Thread):
+    def start(self):
+        print("In start")
+        super().start()
+
 lock = threading.Lock()
+
 
 def thread_func1(n, i):
     with lock:
@@ -20,12 +26,19 @@ def thread_func2(n):
         n -= 1
 '''
 # target is the callable object to be invoked by run() method.
-t1 = threading.Thread(target=thread_func1, args=(5, 1))
-t2 = threading.Thread(target=thread_func1, args=(10, 2))
+# t1 = threading.Thread(target=thread_func1, args=(5, 1))
+# t2 = threading.Thread(target=thread_func1, args=(10, 2))
+
+t1 = MyThread(target=thread_func1, args=(5, 1))
+t2 = MyThread(target=thread_func1, args=(10, 2))
+
 # start method starts the thread activity. Should be run once per thread object
 # arranges for object's run method.
 t1.start()
 t2.start()
+
+# t1.join()
+# t2.join()
 
 '''
 state = 0
