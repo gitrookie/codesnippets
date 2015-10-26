@@ -1,0 +1,26 @@
+{
+    "logging":{
+        "version": 1,
+        "disable_existing_loggers": true,
+        "formatters": {
+            "brief": {
+                "class": "logging.Formatter",
+                "style": "{",
+                "datefmt": "%I:%M:%S",
+                "format": "{levelname:8s}; {name:<15s}; {message:s}"
+            }
+        },
+        "handlers": {
+            "console": {
+                "level": "DEBUG",
+                "class": "logging.StreamHandler",
+                "formatter": "brief"
+            }
+        },
+        "loggers": {},
+        "root": {
+            "handlers": ["console"],
+            "level": "DEBUG"
+        }
+    }
+}

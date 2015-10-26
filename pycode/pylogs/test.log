@@ -1,0 +1,41 @@
+
+DEBUG:root:This msg is for file
+INFO:root:Logging Module: info
+WARNING:root:Logging module: warning
+DEBUG:root:This msg is for file
+INFO:root:Logging Module: info
+WARNING:root:Logging module: warning
+INFO:root:In myapp
+DEBUG:root:This msg is for file
+INFO:root:Logging Module: info
+WARNING:root:Logging module: warning
+DEBUG:root:This msg is for file
+INFO:root:Logging Module: info
+WARNING:root:Logging module: warning
+INFO:root:In myapp
+DEBUG:root:This msg is for file
+INFO:root:Logging Module: info
+WARNING:root:Logging module: warning
+INFO:root:In myapp
+DEBUG:root:This msg is for file
+INFO:root:Logging Module: info
+WARNING:root:Logging module: warning
+INFO:root:In myapp
+2015-10-23 14:04:24,297 DEBUG This msg is for file
+2015-10-23 14:04:24,297 INFO Logging Module: info
+2015-10-23 14:04:24,297 WARNING Logging module: warning
+2015-10-23 14:04:24,297 INFO In myapp
+2015-10-23 14:05:14,007-- DEBUG-- This msg is for file
+2015-10-23 14:05:14,007-- INFO-- Logging Module: info
+2015-10-23 14:05:14,007-- WARNING-- Logging module: warning
+2015-10-23 14:05:14,007-- INFO-- In myapp
+debug message
+info message
+warn message
+error message
+critical message
+2015-10-24 11:41:46,210 -pylogs - DEBUG - debug message
+2015-10-24 11:41:46,210 -pylogs - INFO - info message
+2015-10-24 11:41:46,210 -pylogs - WARNING - warn message
+2015-10-24 11:41:46,210 -pylogs - ERROR - error message
+2015-10-24 11:41:46,210 -pylogs - CRITICAL - critical message

@@ -1,0 +1,23 @@
+2015-10-24 12:34:32,832 - spam -INFO - Creating an instance of auxiliary_module.Auxiliary
+2015-10-24 12:34:32,832 - spam -INFO - created an instance of auxiliary_module.Auxiliary
+2015-10-24 12:34:32,832 - spam -INFO - Calling auxiliary_module.Auxiliary.do_something
+2015-10-24 12:34:32,832 - spam -INFO - finished auxiliary_module.Auxiliary.do_something
+2015-10-24 12:34:32,832 - spam -INFO - calling auxiliary_module.some_function()
+2015-10-24 12:34:32,832 - spam -INFO - Done with auxiliary_module.some_function()
+2015-10-24 12:41:07,010 - spam -INFO - Creating an instance of auxiliary_module.Auxiliary
+2015-10-24 12:41:07,010 - spam -INFO - created an instance of auxiliary_module.Auxiliary
+2015-10-24 12:41:07,011 - spam -INFO - Calling auxiliary_module.Auxiliary.do_something
+2015-10-24 12:41:07,011 - spam -INFO - finished auxiliary_module.Auxiliary.do_something
+2015-10-24 12:41:07,011 - spam -INFO - calling auxiliary_module.some_function()
+2015-10-24 12:41:07,011 - spam.auxiliary_module -INFO - Received a call to some_function
+2015-10-24 12:41:07,011 - spam -INFO - Done with auxiliary_module.some_function()
+2015-10-24 12:42:35,375 - spam -INFO - Creating an instance of auxiliary_module.Auxiliary
+2015-10-24 12:42:35,375 - spam.auxiliary_module.Auxiliary -INFO - Creating instance of Auxiliary
+2015-10-24 12:42:35,375 - spam -INFO - created an instance of auxiliary_module.Auxiliary
+2015-10-24 12:42:35,375 - spam -INFO - Calling auxiliary_module.Auxiliary.do_something
+2015-10-24 12:42:35,375 - spam.auxiliary_module.Auxiliary -INFO - Doing Something
+2015-10-24 12:42:35,375 - spam.auxiliary_module.Auxiliary -INFO - Done Doing Something
+2015-10-24 12:42:35,375 - spam -INFO - finished auxiliary_module.Auxiliary.do_something
+2015-10-24 12:42:35,375 - spam -INFO - calling auxiliary_module.some_function()
+2015-10-24 12:42:35,375 - spam.auxiliary_module -INFO - Received a call to some_function
+2015-10-24 12:42:35,375 - spam -INFO - Done with auxiliary_module.some_function()
