@@ -1,11 +1,10 @@
 # Threads in Python
-
 import threading
 # In Python3 *thread* has been renamed to *_thread* which is used to implement
 # threading* module. Python3 applications should use thread module.
 # args is argument tuple for target invocation
 
-
+'''
 class MyThread(threading.Thread):
     def start(self):
         print("In start")
@@ -19,12 +18,12 @@ def thread_func1(n, i):
         while n:
             print(n ** i)
             n -= 1
-'''
+
 def thread_func2(n):
     while n:
         print(n ** 2)
         n -= 1
-'''
+
 # target is the callable object to be invoked by run() method.
 # t1 = threading.Thread(target=thread_func1, args=(5, 1))
 # t2 = threading.Thread(target=thread_func1, args=(10, 2))
@@ -39,6 +38,7 @@ t2.start()
 
 # t1.join()
 # t2.join()
+'''
 
 '''
 state = 0
@@ -60,3 +60,55 @@ t2.join()
 
 print(state)
 '''
+
+'''
+import datetime
+import time
+
+
+class MyThread(threading.Thread):
+    def run(self):
+        now = datetime.datetime.now()
+        print("%s says Hello World at time: %s" % (self.getName(), now))
+        print("This is thread example from ibm")
+
+
+for i in range(2):
+    t = MyThread()
+    t.start()
+
+'''
+
+
+from queue import Queue
+q = Queue()
+
+
+class PThread(threading.Thread):
+    def __init__(self, pq):
+        self.pq = pq
+        super().__init__()
+
+    def run(self):
+        for i in range(5):
+            self.pq.put(i)
+
+
+class CThread(threading.Thread):
+    def __init__(self, cu):
+        self.cu = cu
+        super().__init__()
+
+    def run(self):
+        for i in range(5):
+            print(self.cu.get() ** 2)
+            self.cu.task_done()
+
+
+pt = PThread(q)
+pt.start()
+
+ct = CThread(q)
+ct.start()
+
+q.join()
