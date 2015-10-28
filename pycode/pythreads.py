@@ -68,14 +68,14 @@ t2.start()
 #####################################################################
 ################## Queues ###########################################
 #####################################################################
-import queue
+# import queue
 # queue module implements multiproducer and multiconsumer queues.
 # queue module provides multiproducer and multiconsumer implementation suitable
 # for multithreading. queue.Queue class implements all locking semantics. It
 # depends upon the availability of thread support in python. Provides
 # FIFO(queue.Queue), LIFO, priority queues.
 
-
+'''
 import datetime
 import time
 
@@ -90,8 +90,7 @@ class MyThread(threading.Thread):
 for i in range(2):
     t = MyThread()
     t.start()
-
-
+'''
 
 
 from queue import Queue

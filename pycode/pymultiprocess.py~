@@ -1,0 +1,4 @@
+# Commentory
+# Multiprocessing is module that supports spawning processes using an API
+# similar to threading moudle. The multiprocessing package offers both local and
+# remote concurrency.

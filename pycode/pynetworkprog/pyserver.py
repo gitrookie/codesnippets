@@ -18,7 +18,7 @@ logger.debug("Binding Socket...")
 s.bind(sock_file)
 logger.debug("Bound Socket...")
 logger.debug("Trying to Listening Socket...")
-s.listen(1)
+s.listen(5)
 logger.debug("Listening Socket...")
 try:
     while True:
