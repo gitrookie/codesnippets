@@ -92,7 +92,7 @@ for i in range(2):
     t.start()
 '''
 
-
+'''
 from queue import Queue
 q = Queue()
 
@@ -125,3 +125,13 @@ ct = CThread(q)
 ct.start()
 
 q.join()
+'''
+
+# Main threads doesn't exit if the current threads is still running.
+# if the daemon=True in the function main thread will exit.
+
+
+def foo():
+    input()
+
+threading.Thread(target=foo, daemon=True).start()
