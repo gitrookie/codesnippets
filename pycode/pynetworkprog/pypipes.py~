@@ -1,4 +1,0 @@
-import os
-
-in, out = os.pipe()
-input()

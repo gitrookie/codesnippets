@@ -1,5 +1,6 @@
 # Threads in Python
 import threading
+import time
 # In Python3 *thread* has been renamed to *_thread* which is used to implement
 # threading* module. Python3 applications should use thread module.
 # args is argument tuple for target invocation
@@ -92,7 +93,7 @@ for i in range(2):
     t.start()
 '''
 
-'''
+
 from queue import Queue
 q = Queue()
 
@@ -125,13 +126,3 @@ ct = CThread(q)
 ct.start()
 
 q.join()
-'''
-
-# Main threads doesn't exit if the current threads is still running.
-# if the daemon=True in the function main thread will exit.
-
-
-def foo():
-    input()
-
-threading.Thread(target=foo, daemon=True).start()
