@@ -5,11 +5,19 @@ db = MySQLdb.connect(host="localhost", user="debian-sys-maint",
 cursor = db.cursor()
 # cursor.execute("SHOW TABLES")
 # tables = cursor.fetchall()
+# print(tables)
 # for (table_name,) in cursor:
 #     print(table_name)
-cursor.execute("SELECT * FROM node_type")
+# cursor.execute("SELECT * FROM node_type")
 
 # cursor.execute("DESCRIBE node")
+# rows = cursor.fetchall()
+# print(rows)
+
+cursor.execute("select * from node_revisions")
 rows = cursor.fetchall()
-print(rows)
+for row in rows:
+    print(row)
+    break
+
 db.close()
