@@ -1,0 +1,1 @@
+SELECT * FROM node LEFT JOIN node_revisions ON node.vid = node_revisions.vid WHERE node_revisions.body LIKE "%YOUR-SEARCH-TERM%"
