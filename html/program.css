@@ -1,0 +1,32 @@
+body {
+    font-family: monospace;
+}
+
+article {
+    width: 800px;
+}
+
+h1 {
+    color: blue;
+}
+
+article header p {
+    background-color: red;
+    color: white;
+}
+
+article figure {
+    width: 600px;
+    height: 600px;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+article figure img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: monospace;
+}
