@@ -1,8 +1,8 @@
 var my_var = "hello world!"
 var my_object = { "first name": "Gaurav",
-		  "last name": "Sood",
-		  "toString": function () { return "Gaurav Sood"; }
-		};
+                  "last name": "Sood",
+                  "toString": function () { return "Gaurav Sood"; }
+                };
 document.writeln(my_var.toUpperCase())
 document.writeln(my_object["first name"])
 
@@ -45,4 +45,4 @@ var newObject = function (func) {
 
 // var per = newObject(Person, "Gaurav", "Sood");
 var per = new Person("Gaurav", "Sood")
-document.writeln(per.toString())
+document.writeln(per.toString());
