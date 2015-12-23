@@ -18,6 +18,5 @@ cursor.execute("select * from node_revisions")
 rows = cursor.fetchall()
 for row in rows:
     print(row)
-    break
 
 db.close()
