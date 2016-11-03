@@ -1,17 +1,64 @@
-body {
-    font-family: monospace;
+
+.wrapper {
+    position: relative;
+    width: 900px;
+    margin: 100px auto;
 }
 
+div.mid {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: larger;
+    background-color: #e5f7ff;
+    margin-bottom: 30px;
+}
+
+#navlist {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#navlist>li {
+	display: inline-block;
+	margin: 10px;
+    border-top: 4px solid #e5f7ff;
+}
+
+#navlist>li:hover {
+    border-top: 4px solid #1a75ff;
+    border-radius: 2px;
+}
+
+
+#navlist>li:before {
+	content: " ";
+}
+
+#navlist li:first-child:before {
+    content: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1a75ff;
+}
+
+}
 article {
     width: 800px;
 }
 
 h1 {
-    color: blue;
+    color: green;
 }
 
 article header p {
-    background-color: red;
+    background-color: #66ffff;
     color: white;
 }
 
@@ -27,6 +74,17 @@ article figure img {
     height: 100%;
 }
 
-body {
-    font-family: monospace;
+
+p {
+	font-family: Sorts Mill Goudy;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 10;
+	line-height: 30px;
+}
+
+footer {
+    height: 400px;
+    background-color: #3399ff;
 }
